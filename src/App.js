@@ -64,7 +64,7 @@ export default function App() {
         }}
       >
         <img
-          src="/logo-prism.png"
+          src={`${process.env.PUBLIC_URL}/logo-prism.png`}
           alt="Logo da Prism School"
           style={{ width: '9rem', height: 'auto', marginTop: '0.5rem' }}
         />
