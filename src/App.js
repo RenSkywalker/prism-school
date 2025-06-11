@@ -21,7 +21,6 @@ export default function App() {
     document.getElementById(id).scrollIntoView({ behavior: "smooth" });
   };
 
-  // Estilo para navbar e blocos com fundo branco semi-transparente (vidro fosco)
   const glassStyle = {
     backgroundColor: "rgba(255, 255, 255, 0.4)",
     backdropFilter: "blur(10px)",
@@ -32,7 +31,6 @@ export default function App() {
 
   return (
     <div className="font-sans text-gray-900 min-h-screen relative">
-      {/* Fundo com a imagem */}
       <div
         style={{
           backgroundImage: `url(${bandeiras})`,
@@ -48,7 +46,6 @@ export default function App() {
         }}
       />
 
-      {/* Navbar sem posição fixa */}
       <nav
         style={{
           ...glassStyle,
@@ -60,7 +57,7 @@ export default function App() {
           paddingTop: '0.5rem',
           paddingBottom: '0.5rem',
           boxShadow: '0 2px 10px rgba(0,0,0,0.1)',
-          position: 'relative', // padrão, não fixa
+          position: 'relative',
         }}
       >
         <img
@@ -68,20 +65,20 @@ export default function App() {
           alt="Logo da Prism School"
           style={{ width: '9rem', height: 'auto', marginTop: '0.5rem' }}
         />
-        <div style={{ display: 'flex', justifyContent: 'center', gap: '2rem', marginTop: '0.5rem' }}>
+        <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '2rem', marginTop: '0.5rem' }}>
           {sections.map(({ id, title }) => (
             <button
               key={id}
               onClick={() => scrollTo(id)}
               style={{
-                color: '#2563eb', // azul tailwind 600
+                color: '#2563eb',
                 fontWeight: 600,
                 background: 'transparent',
                 border: 'none',
                 cursor: 'pointer',
                 transition: 'color 0.3s',
               }}
-              onMouseEnter={(e) => (e.target.style.color = '#dc2626')} // vermelho tailwind 600
+              onMouseEnter={(e) => (e.target.style.color = '#dc2626')}
               onMouseLeave={(e) => (e.target.style.color = '#2563eb')}
             >
               {title}
@@ -92,7 +89,7 @@ export default function App() {
 
       <main
         style={{
-          paddingTop: '2rem', // espaço para o navbar que está normal (não fixa)
+          paddingTop: '2rem',
           maxWidth: '48rem',
           margin: '0 auto',
           paddingLeft: '1rem',
@@ -102,7 +99,6 @@ export default function App() {
           gap: '6rem',
         }}
       >
-        {/* Home */}
         <motion.section
           id="home"
           initial="hidden"
@@ -112,8 +108,7 @@ export default function App() {
           transition={{ duration: 0.6 }}
           style={glassStyle}
         >
-          <h1 style={{ fontSize: '3rem', fontWeight: 'bold', marginBottom: '1rem', color: '#1e40af', textAlign: 'center'
- /* azul escuro */ }}>
+          <h1 style={{ fontSize: '3rem', fontWeight: 'bold', marginBottom: '1rem', color: '#1e40af', textAlign: 'center' }}>
             Prism School
           </h1>
           <p style={{ fontSize: '1.125rem', maxWidth: '36rem', margin: '0 auto' }}>
@@ -121,7 +116,6 @@ export default function App() {
           </p>
         </motion.section>
 
-        {/* Sobre */}
         <motion.section
           id="sobre"
           initial="hidden"
@@ -145,7 +139,6 @@ export default function App() {
           </p>
         </motion.section>
 
-        {/* Valores */}
         <motion.section
           id="valores"
           initial="hidden"
@@ -165,7 +158,6 @@ export default function App() {
           </p>
         </motion.section>
 
-        {/* Contato */}
         <motion.section
           id="contato"
           initial="hidden"
@@ -183,7 +175,6 @@ export default function App() {
           <p>Instagram: prismschool_</p>
         </motion.section>
 
-        {/* Depoimentos */}
         <motion.section
           id="depoimentos"
           initial="hidden"
@@ -208,7 +199,6 @@ export default function App() {
         </motion.section>
       </main>
 
-      {/* WhatsApp flutuante */}
       <a
         href="https://wa.me/5511945957697"
         target="_blank"
@@ -233,7 +223,6 @@ export default function App() {
         <FaWhatsapp />
       </a>
 
-      {/* Instagram flutuante */}
       <a
         href="https://instagram.com/prismschool_"
         target="_blank"
