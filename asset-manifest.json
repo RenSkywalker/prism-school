@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/prism-school/static/css/main.d5f37b79.css",
-    "main.js": "/prism-school/static/js/main.a2ab4225.js",
+    "main.js": "/prism-school/static/js/main.23c73546.js",
     "static/js/453.7df062d2.chunk.js": "/prism-school/static/js/453.7df062d2.chunk.js",
     "static/media/bandeiras.jpg": "/prism-school/static/media/bandeiras.3bb7b5d534d030a9f1ba.jpg",
     "index.html": "/prism-school/index.html",
     "main.d5f37b79.css.map": "/prism-school/static/css/main.d5f37b79.css.map",
-    "main.a2ab4225.js.map": "/prism-school/static/js/main.a2ab4225.js.map",
+    "main.23c73546.js.map": "/prism-school/static/js/main.23c73546.js.map",
     "453.7df062d2.chunk.js.map": "/prism-school/static/js/453.7df062d2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d5f37b79.css",
-    "static/js/main.a2ab4225.js"
+    "static/js/main.23c73546.js"
   ]
 }
