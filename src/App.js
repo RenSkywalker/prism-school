@@ -131,7 +131,7 @@ export default function App() {
           <p>
             A Prism School é uma escola que visa o aluno em seu aprendizado da língua inglesa. Com nossa metodologia própria e especializada em conversação, o aluno irá se familiarizar com a língua e aprendê-la de forma didática e com todo o nosso suporte possível.
             <br /><br />
-            <strong>Missão:</strong>  
+            <strong>Missão:</strong> Empoderar pessoas por meio do ensino do inglês de forma leve, prática e acessível, proporcionando aprendizado real e descomplicado, com acolhimento e respeito às individualidades de cada aluno.  
             <br /><br />
             <strong>Visão:</strong> Ser reconhecida como a escola de idiomas mais acessível, acolhedora e transformadora do Brasil,      empoderando pessoas comuns a conquistarem liberdade e oportunidades por meio da fluência em outras línguas.
             <br /><br />
